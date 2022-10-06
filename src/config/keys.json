@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "nova-364623",
+  "private_key_id": "95ae01242cc9a25492fb08f9a21c6a857e562a77",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDo9o14S4XuBnRI\no+Vr2evlulAxo18bO/f6fhEf3vkk6XKSHqqonMdnjicos3a5XO4BGGVjl2q3FXUQ\nYFuTy61zilqNBS2ro0z2D4ZZgpXYhrrcJiTCsz8cbJQXzzrGGGIt+060oy4aA/6d\nL0ZfjC38dhLKwI9nAfJ0NwdX/UZBrpNmfkF1yas9S9EKa0isGtX6iq2XSbzN/zOo\nJa06ndbwiCG9V1E5rtbF5QdzfA+zlXbqOXCepMLCdl4OZROvoFh5ub7UuiabhSTu\nfzTZ3DWDt6N9UKaS4yefNQaRU35QWgxneZaAeB7XhUOnm3c7nyCpdn7POcY1FgTL\nyEuXV5U/AgMBAAECggEACw91nQH87FWbHL3HTS0OAZysZQbsI4df2SE2H+y+qG16\n9owFLzcuUnDR1CFdICTU2fF2EtnkA6g9pBbnEifH5uXpMavOxMjehQosp0BHa/3N\njlkzQpkvBGL1TwIUOMZ8ltFJJdNfg3WwF3dgoHWv0z4p2z10MYBKqhDYxOkt9j1D\n6Yi1L7NISMUPKWgi3FDgg+4eKLUuBNqNOQn4bmo+o2uy5ApdHN2MsS9yKSpkOHjM\nnVOojbsyJkJGCNlZfY1hf/iygaM9Yw6KczEh1QClA1BGabNoD/h0Ds6jV77tTDsK\ntz1zFwvQl7YK9xDOCelDmuR5NOYUjYcnUdcxcHt94QKBgQD5dwbTXy+KNWRhD986\nma+43zGHx97sqBITz/Sb50EEe+rYM198qnGSjY8Mw2ddganhwCiof8pGPvi25yu5\nmd5MJsXGa4U2T3DR+NGk4sdvA5VAU7fedyale5yb40h0f2KhvRn52gWUJ3j09vK2\nmEYUIj4/EHl1oVzv3vi4w0Eh4QKBgQDvENxIFaiR04HqSK8qIb5EU7IpkW+bh772\nKh9B6y/6Q2LOEKHMeklwQlyyhekO7j8/6qZeSEI0Uhc8rcD/A6B5uKucZkQIv+3c\nF/rmOElOlmhC/qn0oSUJde/c+FDN6CPkFLNsZWAZwzUE69WK+gqOjTgomFicTXvh\noHVLW5nbHwKBgFxlAkktOv1Ucx4j88jPfS7as4yXsXAze6aM4gsQJpuTjdKPjHEu\n66uc9HuEr/cI/DOZqTVnRzKnRhTwH9i5LYVE4wFvd0I7QAz0vCj2uWjbid7uYu5p\ncQ3fb4ypLH/BYnWHBWTtpB1QVVNdV13bnjD80dMnteSkZDiPe81qu+fhAoGANCUy\nV0raHQzMfqTiCEeZ799tsiF1/a/LWHhxnvhE28rNB3ObRzW5RRJEk/AfmNEg3Lk7\nFr+eKTlqtiKUQUuyOjqsvA2Wc24h3OsiIAtQ+iJWlZ5kxeZMZNbjvggv3+ntwjc9\nt7wZDSWGMA+c4ZaOrO9iu4AXe+huyBUu4IQXeDMCgYAkA3z5/bc9U3tOHgMaKoxm\nlL1kiWpaiwLtv0OML0hB3SW6eqZ7Vbtb3o7LpdlmGZkjcrwPzHxzIu6tu9h51sMI\nVxt+yD5PCU9Ftqnos85kLQC9Y+13nGtQtXBnCU4VkDaeH3ZnFZMdJqD5vb+uI8Qh\nmsXbE5agBee6yBh6UTUM8w==\n-----END PRIVATE KEY-----\n",
+  "client_email": "felipenova@nova-364623.iam.gserviceaccount.com",
+  "client_id": "108471834674713416042",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/felipenova%40nova-364623.iam.gserviceaccount.com"
+}

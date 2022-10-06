@@ -1,37 +1,40 @@
+import {
+  createReadStream,
+  emptyDir,
+  PathLike,
+  readdir,
+  readdirSync,
+  statSync,
+} from "fs-extra";
+import { join } from "path";
+import { commerceSize } from "./constants/commerce.constant";
+import { tiendaSize } from "./constants/tienda.constant";
+import { Storage } from "@google-cloud/storage";
+import { UploadFiles } from "./helpers/upload-files.helper";
 import { FilesHelper } from "./helpers/files.helper";
-import { createReadStream, emptyDir } from "fs-extra";
-import { join, resolve } from "path";
-import sharp from "sharp";
+import { InitHelper } from "./helpers/init.helper";
 export interface FileSend {
   originalName: string;
   buffer: Buffer;
   mimetype: string;
 }
-function start() {
-  console.log("hola mundossss");
+async function start() {
+  const p = join(__dirname, "..", "..", "outImages");
+  await emptyDir(p);
 
-  FilesHelper.listFiles().map(async (file, index) => {
-    const p = join(__dirname, "..", "images");
-    const p2 = join(__dirname, "..", "outImages\\");
-
-    await emptyDir(p2)
-    const fileRead = createReadStream(`${p}/${file}`);
-
-    let transform = sharp();
-
-    transform.toFormat("webp", {
-      progressive: true,
-    });
-
-    transform.resize(1000, 1000, {
-      withoutEnlargement: true,
-    });
-    const gg = fileRead.pipe(transform);
-    const format = "webp";
-    const ll = gg.toFormat(format, { palette: true });
-    const ld = await ll.toFile(p2 + file.split(".")[0] + "ddddd." + format);
-    console.log(ld.format);
-    
-  });
+  const campaing = "1";
+  const branch = "commerce";
+  console.log("Redimensionando imagenes");
+  await InitHelper.processCommerce(campaing);
+  await InitHelper.processTienda(campaing);
+   console.log("Subiendo imagenes");
+  const path = `${p}\\${branch}\\${campaing}`
+  const folders = await FilesHelper.listFolder(path);
+  console.log(folders);
+  await folders.map(async (res) => {
+    console.log(`${path}\\${res}\\`);
+    const filess = await FilesHelper.listFilesProseced(`${path}\\${res}\\`)
+  })
+  // UploadFiles.upload();
 }
 start();
